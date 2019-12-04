@@ -1,0 +1,219 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+</head>
+<script type="text/javascript">
+	
+function redirect(){
+	alert("successfully logged out.      redirecting to home page");
+	window.location="home.html";
+}
+
+
+
+</script>
+<style type="text/css">
+	#heading2{
+	height: 30px;
+	width: 100%;
+	border:0;
+	padding: 0;
+	text-align: center;
+	border: 2px solid black;
+
+}
+h2{
+	position: relative;
+	top:-18px;
+}
+.menu{
+	height: 30px;
+	width: 100%;
+	border-bottom:2px ;
+	padding: 5px 0px 3px 0px;
+	background-color:#777374;
+	border: 2px solid black;
+	border-top: 0px solid black;
+	position: relative;
+
+}
+
+.link{
+	padding:10px 5px;
+	padding-left: 5;
+	padding-right: 15px;
+	font-family: sans-serif;
+	font-size: 16px;
+	text-decoration: none;
+	color: #eef1f2;
+	position: relative;
+	top: 4px
+}
+.link:hover{
+	background-color: #14444e;
+	border-bottom: 2px solid black;
+	
+}
+.link:focus{
+	color: white;
+}
+button{
+	background-color:#777374; 
+	display: inline;
+	border:none;
+	color: white;
+	font-size:16px;
+	outline: none;
+}
+button:hover{
+	background-color: #14444e;
+	
+}
+
+body{
+	background-image: url("train2_image.jpg");
+	background-repeat: no-repeat;
+	background-size: 50%;
+}
+#menu{
+	position: relative;
+	left:40%;
+
+}
+
+
+
+
+
+</style>
+<body >
+	
+<div id=heading2>
+	<h2>PASSENGER PORTAL</h2>
+</div>
+<div class=menu>
+		
+		<div id=menu><a class=link href="reservation.html">BOOKING</a>
+		<a class=link href="" target="self">CANCEL</a>
+		<a class=link id="btn" onclick="redirect()"><button >LOG OUT</button><a/>
+		</div>
+</div>
+
+</body>
+</html>-->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>iframe</title>
+</head>
+
+<style type="text/css">
+	/*body{
+		margin: 0;
+		padding: 0;
+		background-image: url(train2.jpg);
+
+		background-repeat: no-repeat;
+		background-position: center;
+		background-attachment:fixed;
+		background-size: cover;
+		opacity: 1
+	
+	}*/
+	iframe{
+		min-width: 410px;
+		height: 510px;
+		border: none;
+		outline: none;
+		position: relative;
+		
+		opacity: 1
+
+	}
+	.dropbtn{
+		background-color: grey;
+		color: white;
+		padding:1px 25px;
+		border: none;
+
+	}
+	.dropdown{
+		position: relative;
+		display: inline-block;
+		top: 10px;
+		
+
+	}
+	 .dropcontent{
+		display: none;
+		position: absolute;
+		background-color: grey;
+		width: 101px;
+		padding: 12px;
+		margin-bottom: 10px;
+	}
+	.dropcontent a{
+		text-decoration: none;
+		display: block;
+		color: white;
+	}
+	.dropbtn:hover{
+		color: black;
+		background-color: white;
+	}
+	.dropcontent a:hover{
+		color: black;
+		background-color: white;
+
+	}
+	.dropdown:hover .dropcontent{
+		display: block;
+		z-index: 1;
+		color: white;
+		background-color: black;
+		top:43px;
+		opacity: 0.5;
+		
+
+	}
+	button{
+		border: none;
+		background-color: black;
+		color: white;
+		width: 101px;	
+	}
+	button:hover{
+		color: black;
+		background-color: white;
+}
+
+</style>
+
+<script type="text/javascript">
+	function redirect(){
+	alert("successfully logged out.      redirecting to home page");
+	window.location="sag_iframes.html";
+}
+</script>-
+<body>
+	<marquee ><pre><h1>USER PORTAL          USER PORTAL          USER PORTAL          USER PORTAL</h1></pre></marquee>
+	<center><div class="dropdown">
+		<button class="dropbtn"><h3>Action</h3></button>
+		<div class="dropcontent" id="drpcnt">
+			<a href="reservation.html" >RESERVATION</a>
+			<a href="" >CANCEL</a>
+			<a class=link id="btn" onclick="redirect()"><button >LOG OUT</button><a/>
+		</div>
+	</div>
+	<div class="iframe-mar">
+		<iframe src="reservation.html" name="if"></iframe>
+	</div>
+	</center>
+	
+
+</body>
+</html>

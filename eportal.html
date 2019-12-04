@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>iframe</title>
+</head>
+
+<style type="text/css">
+	body{
+		margin: 0;
+		padding: 0;
+				background: linear-gradient(90deg,rgba(230,23,13,1),rgba(233,10,71,0.4),rgba(233,10,71,1));
+		box-shadow: 0px,3px,0px,0px rgba(130,100,100,4);
+		animation: myanimation 5s infinite;
+	}
+	.dropbtn{
+		background-color: grey;
+		color: white;
+		padding:1px 25px;
+		border: none;
+		width: 150px;
+
+	}
+	.dropdown{
+		position: relative;
+		display: inline-block;
+		top: 10px;
+		
+
+	}
+	 .dropcontent{
+		display: none;
+		position: absolute;
+		background-color: grey;
+		width: 127px;
+		padding: 12px;
+		margin-bottom: 10px;
+	}
+	.dropcontent a{
+		text-decoration: none;
+		display: block;
+		color: white;
+	}
+	.dropbtn:hover{
+		color: black;
+		background-color: white;
+	}
+	.dropcontent a:hover{
+		color: black;
+		background-color: white;
+
+	}
+	.dropdown:hover .dropcontent{
+		display: block;
+		z-index: 1;
+		color: white;
+		background-color: black;
+		top:43px;
+		
+		
+
+	}
+
+		@keyframes myanimation{
+		50%{background:linear-gradient(90deg,rgba(205,214,48,1),rgba(7,241,254,1),rgba(172,100,179,1));}
+		80%{background: linear-gradient(90deg,rgba(255,100,179,1),rgba(7,241,254,1),rgba(205,214,48,1));}
+	}
+	button{
+		border: none;
+		background-color: black;
+		color: white;
+		width: 101px;	
+	}
+	button:hover{
+		color: black;
+		background-color: white;
+}
+
+</style>
+
+<script type="text/javascript">
+	function redirect(){
+	alert("successfully logged out.      redirecting to home page");
+	window.location="sag_iframes.html";
+}
+</script>-
+<body>
+	<marquee ><pre><h1>EMPLOYEE PORTAL          EMPLOYEE PORTAL          EMPLOYEE PORTAL          EMPLOYEE PORTAL</h1></pre></marquee>
+	<center><div class="dropdown">
+		<button class="dropbtn"><h3>Action</h3></button>
+		<div class="dropcontent" id="drpcnt">
+			<a href="adtrn.html" >ADD TRAIN</a>
+			<a href="updatetrain.html" >UPDATE TRAIN</a>
+			<a class=link id="btn" onclick="redirect()"><button >LOG OUT</button><a/>
+		</div>
+	</div>
+	<!--<div class="iframe-mar">
+		<iframe src="adtrn.html" name="if"></iframe>
+	</div>-->
+	</center>
+	
+
+</body>
+</html>

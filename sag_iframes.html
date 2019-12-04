@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>iframe</title>
+</head>
+
+<style type="text/css">
+	/*body{
+		margin: 0;
+		padding: 0;
+		background-image: url(train2.jpg);
+
+		background-repeat: no-repeat;
+		background-position: center;
+		background-attachment:fixed;
+		background-size: cover;
+		opacity: 1
+	
+	}*/
+	iframe{
+		min-width: 410px;
+		height: 510px;
+		border: none;
+		outline: none;
+		position: relative;
+		
+		opacity: 1
+
+	}
+	.dropbtn{
+		background-color: grey;
+		color: white;
+		padding:1px 25px;
+		border: none;
+
+	}
+	.dropdown{
+		position: relative;
+		display: inline-block;
+		top: 10px;
+		
+
+	}
+	 .dropcontent{
+		display: none;
+		position: absolute;
+		background-color: grey;
+		width: 102px;
+		padding: 12px;
+		margin-bottom: 10px;
+	}
+	.dropcontent a{
+		text-decoration: none;
+		display: block;
+		color: white;
+	}
+	.dropbtn:hover{
+		color: black;
+		background-color: white;
+	}
+	.dropcontent a:hover{
+		color: black;
+		background-color: white;
+
+	}
+	.dropdown:hover .dropcontent{
+		display: block;
+		z-index: 1;
+		color: white;
+		background-color: black;
+		top:43px;
+		opacity: 1
+		
+
+	}
+</style>
+<!--
+<script type="text/javascript">
+	function redirect(){
+		// body...
+		document.getElementById('drpcnt').classList.toggle('show');
+	}
+		window.onclick=function(event) {
+			// body...
+			if(!event.target.matches('.dropbtn')){
+				var drops=document.getElementByClassName("dropcontent");
+				var i;
+				for(i=0;i<drops.length;i++){
+					var opendrops=drops[i];
+					if(opendrops.classList.contains('show')){
+						opendrops.classList.remove('show');
+					}
+				}
+			}
+		}
+	}
+</script>-->
+<body>
+	<marquee ><pre><h1>RAILWAY MANAGEMENT          RAILWAY MANAGEMENT          RAILWAY MANAGEMENT          RAILWAY MANAGEMENT</h1></pre></marquee>
+	<center><div class="dropdown">
+		<button class="dropbtn"><h3>LOGIN AS</h3></button>
+		<div class="dropcontent" id="drpcnt">
+			<a href="sag_prac.html" >User</a>
+			<a href="sag_admin_login.html" >Admin</a>
+			<a href="emp_login.html" >EMPLOYEE</a>
+
+		</div>
+	</div>
+	<!--<div class="iframe-mar">
+		<iframe src="sag_prac.html" name="if"></iframe>
+	</div>-->
+	</center>
+	
+
+</body>
+</html>

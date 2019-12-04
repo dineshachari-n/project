@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>admin portal</title>
+</head>
+<style type="text/css">
+	
+	#back{
+		width: 40%;
+		height: 100px;
+		border-radius: 30%;
+	}
+
+
+	h2{
+	position: relative;
+	top:-21px;
+	color: #146696; 
+}
+body{
+	margin: 0;
+	margin-right: 10px;
+	margin-left: 10px;
+	padding: 0;
+}
+
+.menu{
+	border-radius: 8px;
+	height: 30px;
+	width:100%;
+	border:0;
+	padding: 5px 0px 3px 0px;
+	background-color:#146696;
+	border: 2px solid black;
+	border-top: 2px solid black;
+}
+#div3{
+	margin-top: 20px;
+	background-image: url("hometrain.png");
+	border: 2px solid black;
+	border-radius: 10%;
+	height:340px;
+	width: 600px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+img{
+	width: 16px;
+	height: 16px;
+	float: left;
+	padding-left: 10px;
+	position: relative;
+	top:5px;
+}
+
+.link{
+	padding:11px 5px;
+	padding-left: 5;
+	padding-right: 15px;
+	font-family: sans-serif;
+	font-size: 15px;
+	text-decoration: none;
+	color: #eef1f2;
+	position: relative;
+	top: 5px;
+	
+}
+.link:hover{
+	background-color: #14444e;
+	z-index: 1;
+
+	
+}
+
+button{
+	background-color:#146696;
+	display: inline;
+	border:none;
+	color: #eef1f2;
+	font-size:16px;
+	outline: none;
+	cursor: pointer;
+}
+button:hover{
+	background-color: #14444e;
+	
+}
+
+</style>
+<body >
+	<script type="text/javascript">
+	
+function redirect(){
+	
+	alert("successfully logged out.      redirecting to home page");
+
+	window.location="home.html";
+}
+
+
+
+</script>
+	<link rel="stylesheet" type="text/css" href="">
+	<img src="logo.png" id="back">
+<div id=heading2>
+	
+	<marquee ><pre><h2>ADMIN PORTAL		ADMIN PORTAL	 ADMIN PORTAL      ADMIN PORTAL       ADMIN PORTAL</h2></pre></marquee>
+</div>
+<div class=menu>
+		
+		<a class=link href="adminAcc1.html" ><img src="home.png">HOME </a>
+		<a class=link href="adtrn1.php" target="">ADD TRAIN</a>
+		<a class=link href="updatetrain1.php" target="">UPDATE TRAIN</a>
+		<a class=link href="adstation.html" target="">ADD STATION</a>
+		<a class=link href="emp.html" target="">ADD EMPLOYEE</a>
+		<a class=link href="pnr_status.php">PNR STATUS</a>
+		<a class=link onclick="redirect()"><button >LOGOUT</button><a/>
+		
+</div>
+	<div id="div3"></div>
+</body>
+</html>

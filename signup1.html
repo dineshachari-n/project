@@ -1,0 +1,218 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<style>
+html{
+    background-image: url("high-speed-train.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+body{
+    width:50%;
+    position: relative;
+    left: 25%;
+}
+
+
+input[type=text], input[type=password], input[type=email],input[type=number],select {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    outline: none;
+    background: white;
+    height: 35px;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus,input[type=number]:focus select:focus{
+    background-color: pink;
+    outline: none;
+}
+
+
+hr {
+    border: 1px solid #f1f1f1;
+    position: relative;top: -10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+
+}
+
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+#whole{
+    margin:0px;
+    padding: 0;
+
+}
+input[type=number]{
+    padding: 10px;
+}
+
+#h1{
+    text-align: center;
+    color: white;
+    position: relative;
+    top:-10px;
+}
+.lab{
+    color: white;
+    width:50%;
+    position: relative;
+    left: 25%;
+}
+#lab1 input[type=number],input[type="text"]{
+    height: 35px;
+}
+#body{
+    background-color: black;
+    opacity: 0.6;
+
+}
+span{
+    color: white;
+    font-size: 20px;
+}
+/*select{
+    height: 35px;
+    width: 90%;
+    padding: 10px;
+    margin-top:10px;
+    margin-bottom: 15px;
+}*/
+
+input:invalid,select:invalid{
+    box-shadow: 0 0 10px 5px red;
+    }
+    input:valid,select:valid{
+    box-shadow: 0 0 10px 5px green;
+    }
+</style>
+
+
+<script type="text/javascript">
+  
+function direct(){
+  alert("redirecting to home page");
+  window.location="home.html";
+}
+
+
+</script>
+
+
+
+
+<body>
+<div id=body>
+    <form  method="post"  action="signup.php" style="border:1px solid #ccc">
+      <div class="container">
+        <div id=h1><h2>Sign Up</h2></div>
+        <!--<p style="color: white">Please fill in this form to create an account.</p>-->
+        <hr>
+        <span>* required.</span>
+        <div id=whole>
+            <div id=lab1 class=lab>
+                <label for="uname"><b>Name *</b></label>
+                <input type="text" placeholder="Enter Name"    name="uname" required pattern="[a-zaA-Z0-9!@#$%^&*]*">
+            </div>
+            <div id=lab1 class=lab>
+                <label for="phone"><b>Phone Number * </b></label>
+                <input type="text" placeholder="Enter Phone Number"    name="phone" required minlength="10" maxlength="10" >
+            </div>
+            <div class=lab>
+                <label for="email"><b>Email *</b></label>
+                <input type="email" placeholder="Enter Email" name="email" required pattern="[a-z0-9@.A-Z]*">
+            </div>
+            <div class="lab">
+                <label ><b>HINT QUESTION*</b></label><br>
+                <select name="answer">
+                    <option></option>
+                    <option>WHAT IS YOUR NICKNAME?</option>
+                    <option>ABC</option>
+                    <option>BCD</option>
+                </select>
+              <!--  <select >
+                    <option>What is your nick name</option>
+                    <option>What is your favroite colour</option>
+                    <option>what is your fav movie</option>
+                </select>-->
+
+            </div>
+            <div class=lab>
+                <label for="hint_answer"><b>HINT ANSWER*</b></label>
+                <input type="text" placeholder="Enter hint answer" name="hint" required>
+            </div>
+
+            <div class=lab>
+                <label for="psw"><b>Password *</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" maxlength="12" required pattern="[a-z0-9A-Z!@#$%^&*()]*[A-Z]+[a-z0-9A-Z!@#$%^&*()]*">
+            </div>
+           <div class=lab>
+                <label for="psw-repeat"><b>Confirm Password *</b></label>
+                <input type="password" placeholder="Confirm Password" maxlength="12" name="psw-repeat" required pattern="[a-z0-9A-Z!@#$%^&*()]*[A-Z]+[a-z0-9A-Z!@#$%^&*()]*">
+            </div>
+        </div>
+        
+      <!--  <label>
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </label>-->
+        
+
+        <div class="clearfix">
+          <button type="button" class="cancelbtn" onclick="direct()">Cancel</button>
+          <button type="submit" class="signupbtn">Sign Up</button>
+        </div>
+      </div>
+    </form>
+</div>
+</body>
+</html>

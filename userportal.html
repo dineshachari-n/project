@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>USER PORTAL</title>
+</head>
+<script type="text/javascript">
+	
+function redirect(){
+	
+	alert("successfully logged out.      redirecting to home page");
+
+	window.location="home.html";
+}
+
+
+
+</script>
+<style type="text/css">
+	#heading2{
+	height: 30px;
+	width: 100%;
+	border:0;
+	padding: 0;
+	text-align: center;
+	border: 0px solid black;
+	margin-top: 10px;
+}
+h2{
+	position: relative;
+	top:-18px;
+}
+.menu{
+	height: 30px;
+	width: 100%;
+	border-bottom:none ;
+	padding: 5px 0px 3px 0px;
+	background-color:#777374;
+	border: 0px solid black;
+	border-top: 0px solid black;
+	position: relative;
+
+}
+
+.link{
+	padding:10px 5px;
+	padding-left: 5;
+	padding-right: 15px;
+	font-family: sans-serif;
+	font-size: 16px;
+	text-decoration: none;
+	color: #eef1f2;
+	position: relative;
+	top:-5px
+}
+.link:hover{
+	background-color: #14444e;
+	border-bottom: 2px solid black;
+	
+}
+.link:active{
+	background-color: #14444e;
+}
+button{
+	background-color:#777374; 
+	display: inline;
+	border:none;
+	color: white;
+	font-size:16px;
+	outline: none;
+}
+button:hover{
+	background-color: #14444e;
+	
+}
+
+body{
+	background-image: url(train2.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 150%;
+}
+#menu{
+	position: relative;
+	left:32%;
+
+}
+#id1{
+
+	padding: center;
+	position: relative;
+	margin-left: 40%;
+	margin-top: 18%; 
+}
+
+
+	.dropbtn1{
+	padding:10px 5px;
+	padding-left: 5;
+	padding-right: 15px;
+	font-family: sans-serif;
+	font-size: 16px;
+	text-decoration: none;
+	color: #eef1f2;
+	position: relative;
+		height: 35px;
+	
+	top:px
+}
+
+	.dropbtn1:hover{
+	background-color: #14444e;
+	border-bottom: 2px solid black;
+	height: 40px;
+	
+}
+	.dropdown1{
+		position: relative;
+		display: inline-block;
+		width: 150px;
+		top: -5px;
+		left: px;
+
+	}
+	 .dropcontent1{
+		display: none;
+		position: absolute;
+		background-color: white;
+		width: 250px;
+		padding: 12px;
+		margin-bottom: 10px;
+	}
+	.dropcontent1 a{
+		text-decoration: none;
+		display: block;
+		color: black;
+	}
+	.dropbtn1:hover{
+		color: white;
+	}
+	/*.dropcontent a:hover{
+		color: black;
+		background-color:white;
+
+	}*/
+	.dropdown1:hover .dropcontent1{
+		display: block;
+		z-index: 1;
+		color: black;
+		background-color: white;
+		border:1px solid black;
+		border-radius: 5%;
+		top:35px;
+		left: px;
+		width: 150px;
+		
+
+	}
+
+
+
+</style>
+<body >
+	
+<div id=heading2>
+	<h2>PASSENGER PORTAL</h2>
+</div>
+<div class=menu>
+		
+		
+			<a class=link href="userportal.html">HOME</a>
+			<a class=link href="reservation.php">BOOKING</a>
+			<a class=link href="payment.php">MAKE PAYMENT</a>
+			
+			<a class=link href="cancel.php" >CANCEL</a>
+			<div class="dropdown1">
+				
+						<button class="dropbtn1" disabled="">PNR STATUS</button>
+						<div class="dropcontent1" id="drpcnt">
+							<a href="user_pnr_status.php" >PRINT TICKET</a>
+							<a href="user_pnr_full_status.php" >HISTORY</a>
+						</div>
+			</div>
+
+			<a class=link id="btn" onclick="redirect()"><button >LOGOUT</button><a/>
+
+</div>
+<div id="id1">
+	<h1><font size="20px" color="white">INDIAN RAILWAYS</font></h1>
+	<P><font size="5px" color="white"> SAFTY|SECURITY|PUNCTUALITY</font></P>
+
+</div>
+
+</body>
+</html>

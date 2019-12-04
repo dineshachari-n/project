@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee Page</title>
+	<link rel="stylesheet" type="text/css" href="emp.css">
+</head>
+<script type="text/javascript">
+	function redirect(){
+	alert("redirecting to admin portal page");
+	window.location="adminAcc1.html";
+}
+</script>
+<body>
+	<div class="div1">
+		<h1>Enter employee details</h1>
+		<center>
+		<form method="post" action="emp.php">
+			<table class="table1">
+				<tr>
+					<td><label >Emp ID</label></td>
+					<td><input type="text" name="e_id" placeholder="enter Employee ID" required=""></td>
+				</tr>
+				<tr>
+					<td><label  >Name</label></td>
+					<td><input  type="text" name="name" placeholder="enter Employee name" required="" pattern="[a-zA-Z]*"></td>
+				</tr>
+				<tr>
+					<td><label  >email</label></td>
+					<td><input  type="text" name="email" placeholder="enter Employee email" required="" pattern="[a-z0-9@.A-Z]*"></td>
+				</tr>
+				<tr>
+					<td><label  >phone</label></td>
+					<td><input  type="text" minlength="1" maxlength="10" name="phone" placeholder="enter phone_no" required="" pattern="[0-9]+"></td>
+				</tr>
+				<tr>
+					<td><label  >Job</label></td>
+					<td><input  type="text" name="job" placeholder="enter Employee job" required=""></td>
+				</tr>
+
+				<tr>
+					<td><label  >Salary</label></td>
+					<td><input  type="text" name="salary" placeholder="enter Employee salary" required="" pattern="[0-9]+"></td>
+				</tr>
+				<tr>
+					<td><label  >Gender</label></td>
+					<td><input  type="text" name="gender" placeholder="enter Employee gender" required=""></td>
+
+				</tr>
+				<tr>
+					<td><label  >Age</label></td>
+					<td><input  type="text" name="age" placeholder="enter Employee age" required="" pattern="[0-9]*"></td>
+				</tr>
+				<tr>
+					<td><label  >Password</label></td>
+					<td><input  type="password" minlength="8" name="password" minlength="8" maxlength="15" placeholder="enter password" required="" pattern="[a-z0-9A-Z!@#$%^&*()]*[A-Z]+[a-z0-9A-Z!@#$%^&*()]*"></td>
+				</tr>
+				<tr>
+					<td><button onclick="redirect()">cancel</button></td>
+					<td><button class="c1" type="submit" name="sumbit" >submit</button></td>
+				</tr>
+			</table>
+		</form>
+	</center>
+	</div>
+</body>
+</html>

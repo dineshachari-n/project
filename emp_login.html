@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>admin login</title>
+</head>
+<style type="text/css">
+	/*body{
+		margin: 0;
+		padding: 0;
+		height: auto;
+		width: 100%;
+		font-family: sans-serif;
+		position: inherit;
+		background:url(train2.jpg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		min-height: 665px;
+		top: 0;
+		left: 0;
+
+	}*/
+	body{
+		margin: 0;
+		padding: 0;
+		background-color: #c3c3c3;
+	}
+	.login-box{
+		width: 400px;
+		height: 500px;
+		position: absolute;
+		left: 30%;
+		top: 10%;
+		border: 1px solid black;
+		background: linear-gradient(90deg,rgba(230,23,13,0.8),rgba(233,10,71,0.4),rgba(233,10,71,0.8));
+		box-shadow: 0px,3px,0px,0px rgba(130,100,100,4);
+
+	}
+	.avatar{
+		width: 100px;
+		left:50%;
+
+		
+
+	}
+	label{
+		font-weight: bold;
+		position:absolute;
+		left: 113px;
+
+
+		
+	}
+	input[type="text"],input[type="password"]{
+		padding: 5px;
+		border: none;
+		margin-bottom: 13px;
+		margin-top:5px; 
+		background:transparent;
+		border-bottom: 1px solid black;
+
+
+	}
+	p{
+		font-size: 4vw;
+		font-size: 4vh;
+	}
+	input[type="submit"]{
+		border: none;
+		width: 25%;
+		height: 30px;
+		background-color: black;
+		opacity: 0.5;
+		color: white;
+	}
+	.forgot{
+		height: auto;
+		width: 100%;
+		position: relative;
+	}
+	.forgot a{
+		text-decoration: none;
+		float: right;
+		position: absolute;
+		left: 60%;
+		margin-top: 15px;
+		color: black;
+			}
+	.forgot a:hover{
+		color: white;
+
+	}
+	button{
+		position: absolute;
+		left: 50px;
+		top: 10px;
+		border: none;
+		width: 25%;
+		height: 30px;
+		background-color:white;
+		opacity: 0.3;
+		color: black;
+		font-weight: bold;
+		cursor: pointer;
+	}
+	button:hover{
+		color:white;
+		background-color: green;opacity: 1;
+	}
+	#required{
+		position: relative;
+		
+		top: -30px;
+		left: -60px;
+	}
+
+
+
+</style>
+<script type="text/javascript">
+	function redirect(){
+	alert("successfully logged out.      redirecting to home page");
+	window.location="sag_iframes.html";
+}
+</script>
+
+<body class="body">
+		<center>
+		<div class="login-box">
+			<img src="log-in-png-2.png" class="avatar">
+			<h1>EMPLOYEE LOGIN </h1><br>
+
+			<form method="post" action="emp_login.php">
+				<label>EMAIL*</label><span id=required>*required</span><br>
+				<input type="text" name="mail" placeholder="enter user  name" required=""><br>
+				<label>PASSWORD*</label><br>
+				<input type="password" name="password" placeholder="enter password" required=""><br>
+				<input type="submit" value="login" name="login">
+
+			</form>
+			<br>
+			<div class="forgot">
+				<button onclick="redirect()">cancel</button>
+				<a href="">Forgot password?</a>
+			</div>
+		</div>
+	</center>
+
+</body>
+</html>
